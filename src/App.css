@@ -8,6 +8,20 @@ h3 {
   font-size: 2rem;
 }
 
+button {
+  background: transparent;
+  border: 2px solid rgba(150,150,150, 1);
+  padding: 0.5em 1em;
+  width: calc(80% + 0.2em);
+  margin: 1em 0;
+  letter-spacing: 0.1em;
+}
+
+button i {
+  font-size: 1.2rem;
+  margin: auto 0;
+}
+
 .contentContainer {
   margin: 1.5em 0;
   padding: 1em;
@@ -92,8 +106,8 @@ h3 {
 /* HEADLINEANDTEXT STYLES */ 
 .headlineAndText {
   color: rgba(150,150,150, 1);
+  
 }
-
 /* IMAGEANDTEXT STYLES */
 .imageAndText {
   width: 100%;
@@ -114,4 +128,90 @@ h3 {
 .scrollSuits img {
   height: 400px;
   width: 100%;
+}
+
+/* MODALBUTTON STYLES */
+.modalButtonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalButtonContainer h3 {
+  text-align: center;
+}
+/* MODAL STYLES */
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  animation: appearAnim 0.5s; 
+}
+
+@keyframes appearAnim {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.modalBackground .modalWrapper {
+  width: 90%;
+  height: 50%;
+  margin-top: 3em;
+  background: #eee;
+  z-index: 1030;
+}
+
+.modalBackground .modalWrapper .modalContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.modalBackground .modalWrapper .modalContent .fa-times {
+  font-size: 1.5rem;
+  align-self: flex-end;
+  margin: 0.5em 0.5em 0 0;
+}
+
+.modalBackground .modalWrapper .modalContent .modalForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalBackground .modalWrapper .modalContent .modalForm .modalInput {
+  border: 1px solid rgba(150,150,150, 1);
+  margin: 0.8em 0;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.2em;
+  width: 80%;
+}
+
+.modalBackground .modalWrapper .modalContent .modalForm .modalInput i {
+  margin: 0 0.5em;
+}
+
+.modalBackground .modalWrapper .modalContent .modalForm .modalInput input {
+  border: none;
+  background: transparent;
+}
+/* FOOTER STYLES*/
+.footer {
+  margin: 2em;
+  border-top: 1px solid rgba(150,150,150, 1);
+  display: flex;
+  justify-content: center;
+  padding: 1em;
 }

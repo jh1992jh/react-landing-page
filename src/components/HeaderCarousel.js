@@ -11,7 +11,7 @@ class HeaderCarousel extends Component {
         const imagesArr = Object.keys(imagesFour).map(img => imagesFour[img]);
         this.setState({images: imagesArr})
 
-        setInterval(this.incActiveIndex, 1000)
+        setInterval(this.incActiveIndex, 5000)
     }
 
     incActiveIndex = () => {
@@ -44,15 +44,15 @@ class HeaderCarousel extends Component {
     }  else {
         output = <img src={images[activeIndex]} alt="man with a suit"/>
         activeCircles = images.map((image, i) => (
-            <div className="circle"><div className={activeIndex === i ? 'innerCircle' : null} /></div>
+            <div key={i} className="circle"><div className={activeIndex === i ? 'innerCircle' : null} /></div>
         ))
     }
 
     return (
         <div className="headerCarousel">
         {output}
-        <i class="far fa-arrow-alt-circle-right" onClick={this.incActiveIndex}/>
-        <i class="far fa-arrow-alt-circle-left" onClick={this.decActiveIndex}/>
+        <i className="far fa-arrow-alt-circle-right" onClick={this.incActiveIndex}/>
+        <i className="far fa-arrow-alt-circle-left" onClick={this.decActiveIndex}/>
         <div className="activeCircles">
             {activeCircles}
         </div>
