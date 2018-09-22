@@ -1,0 +1,117 @@
+/* COMMON STYLES */
+* {
+  font-family: 'Poiret One', cursive;
+}
+
+h3 {
+  color: rgba(150,150,150, 1);
+  font-size: 2rem;
+}
+
+.contentContainer {
+  margin: 1.5em 0;
+  padding: 1em;
+}
+
+.text {
+  margin: 1em 0;
+}
+
+.bolded {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* HEADERCAROUSEL STYLES */
+.headerCarousel {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.headerCarousel img {
+  width: 100%;
+  height: 350px;
+}
+
+.headerCarousel .fa-arrow-alt-circle-right {
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  color: rgba(180,180,180, 1);
+  font-size: 2rem;
+}
+
+.headerCarousel .fa-arrow-alt-circle-left {
+  position: absolute;
+  top: 50%;
+  left: 0.5em;
+  color: rgba(180,180,180, 1);
+  font-size: 2rem;
+}
+
+.headerCarousel .activeCircles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.headerCarousel .activeCircles .circle {
+  border: 2px solid rgba(180,180,180, 1);
+  border-radius: 360px;
+  height: 30px;
+  width: 30px;
+  margin: 0 0.5em;
+}
+
+.headerCarousel .activeCircles .circle .innerCircle {
+  border: 2px solid rgba(180,180,180, 1);
+  background: rgba(180,180,180, 1);
+  border-radius: 360px;;
+  width: 80%;
+  height: 80%;
+  margin: 0.1em auto auto auto;
+}
+
+.headerCarousel .carouselHeadline {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  text-shadow: -1px -1px 0 rgba(180,180,180, 1);
+  letter-spacing: 0.1em;
+}
+
+/* HEADLINEANDTEXT STYLES */ 
+.headlineAndText {
+  color: rgba(150,150,150, 1);
+}
+
+/* IMAGEANDTEXT STYLES */
+.imageAndText {
+  width: 100%;
+}
+
+.imageAndText img {
+  height: 300px;
+  width: 100%;
+}
+
+/* SCROLLSUITS STYLES */ 
+.scrollSuits {
+  height: 500px; 
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.scrollSuits img {
+  height: 400px;
+  width: 100%;
+}
