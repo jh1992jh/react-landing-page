@@ -3,6 +3,10 @@
   font-family: 'Poiret One', cursive;
 }
 
+.forDesktop {
+  display: none;
+}
+
 h3 {
   color: rgba(150,150,150, 1);
   font-size: 2rem;
@@ -34,6 +38,33 @@ button i {
 .bolded {
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+@media (min-width: 1000px) and (max-width: 2000px) {
+  .forMobile {
+    display: none !important;
+  }
+
+  .forDesktop {
+    display: block;
+  }
+
+  .contentContainer {
+    display: flex;
+    max-width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .contentContainer img {
+    max-width: 50%;
+  }
+
+  .contentContainer p {
+    max-width: 40%;
+    display: inline;
+    margin: 0 2em;
+  }
 }
 
 /* HEADERCAROUSEL STYLES */
@@ -103,10 +134,35 @@ button i {
   letter-spacing: 0.1em;
 }
 
+@media (min-width: 1000px) and (max-width: 2000px) {
+  .headerCarousel {
+    width: 50%;
+    min-height: 500px;
+    margin: auto;
+  }
+  
+  .headerCarousel img {
+    height: 500px;
+  }
+  
+}
 /* HEADLINEANDTEXT STYLES */ 
 .headlineAndText {
   color: rgba(150,150,150, 1);
-  
+}
+
+@media (min-width: 1000px) and (max-width: 2000px) {
+  .headlineAndText {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .headlineAndText p {
+    flex: 1;
+  }
+  .headlineAndText h3 {
+    width: 100%;
+    margin-left: 1em;
+  }
 }
 /* IMAGEANDTEXT STYLES */
 .imageAndText {
@@ -116,6 +172,20 @@ button i {
 .imageAndText img {
   height: 300px;
   width: 100%;
+}
+
+.headerCarousel .activeCircles {
+  bottom: 1em;
+}
+
+@media (min-width: 1000px) and (max-width: 2000px) {
+  .imageAndText {
+    display: flex;
+    flex: 1;
+    margin: 2em 0;
+  }
+  .imageAndText p {
+  }
 }
 
 /* SCROLLSUITS STYLES */ 
@@ -128,6 +198,28 @@ button i {
 .scrollSuits img {
   height: 400px;
   width: 100%;
+}
+
+@media (min-width: 1000px) and (max-width: 2000px) {
+  .scrollSuits {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    box-shadow: 0 0 8px rgba(150,150,150, 0.5);
+    padding-top: 1em;
+  }
+
+  .scrollSuits .forDesktop {
+    display: flex;
+    flex-direction: column;
+    max-height: 50%;
+    line-height: 1rem;
+  }
+  .scrollSuits p {
+    width: 100%;
+    display: block;
+    margin: 0.5em 8em 0 2em;
+  }
 }
 
 /* MODALBUTTON STYLES */
@@ -206,6 +298,12 @@ button i {
 .modalBackground .modalWrapper .modalContent .modalForm .modalInput input {
   border: none;
   background: transparent;
+}
+
+@media (min-width: 1000px) and (max-width: 2000px) {
+  .modalWrapper {
+    max-width: 50%;
+  }
 }
 /* FOOTER STYLES*/
 .footer {
