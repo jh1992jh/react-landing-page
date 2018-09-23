@@ -49,14 +49,14 @@ class HeaderCarousel extends Component {
     }
 
     return (
-        <div className="headerCarousel">
+        <div className="headerCarousel forMobile">
         {output}
         <i className="far fa-arrow-alt-circle-right" onClick={this.incActiveIndex}/>
         <i className="far fa-arrow-alt-circle-left" onClick={this.decActiveIndex}/>
         <div className="activeCircles">
             {activeCircles}
         </div>
-        <h3 className="carouselHeadline">{carouselHeadline}</h3>
+        <h3 className="carouselHeadline forMobile">{carouselHeadline}</h3>
         </div>
     )
   }

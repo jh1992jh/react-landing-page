@@ -40,7 +40,7 @@ button i {
   font-weight: 600;
 }
 
-@media (min-width: 1000px) and (max-width: 2000px) {
+@media (min-width: 1000px) and (max-width: 3000px) {
   .forMobile {
     display: none !important;
   }
@@ -67,6 +67,44 @@ button i {
   }
 }
 
+/* HEADER STYLES */
+ @media (min-width: 1000px) and (max-width: 3000px) {
+   .header {
+     display: flex;
+     justify-content: space-between;
+     width: 80%;
+     margin: 3em auto;
+   }
+
+   .header img {
+     max-height: 50vh;
+     flex: 1;
+     margin: 0 1em;
+   }
+ }
+/* NAVBAR STYLES */
+@media (min-width: 1000px) and (max-width: 3000px) {
+  nav {
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  nav .socialIcons {
+    color: rgba(150,150,150, 1);
+    margin-right: 1em;
+  }
+
+  nav .socialIcons i {
+    margin: 0 0.5em;
+  }
+
+  nav h3 {
+    margin: 0 0 0 1em;
+  }
+}
 /* HEADERCAROUSEL STYLES */
 .headerCarousel {
   width: 100%;
@@ -134,7 +172,7 @@ button i {
   letter-spacing: 0.1em;
 }
 
-@media (min-width: 1000px) and (max-width: 2000px) {
+@media (min-width: 1000px) and (max-width: 3000px) {
   .headerCarousel {
     width: 50%;
     min-height: 500px;
@@ -151,7 +189,7 @@ button i {
   color: rgba(150,150,150, 1);
 }
 
-@media (min-width: 1000px) and (max-width: 2000px) {
+@media (min-width: 1000px) and (max-width: 3000px) {
   .headlineAndText {
     display: flex;
     flex-wrap: wrap;
@@ -178,13 +216,11 @@ button i {
   bottom: 1em;
 }
 
-@media (min-width: 1000px) and (max-width: 2000px) {
+@media (min-width: 1000px) and (max-width: 3000px) {
   .imageAndText {
     display: flex;
     flex: 1;
     margin: 2em 0;
-  }
-  .imageAndText p {
   }
 }
 
@@ -200,7 +236,7 @@ button i {
   width: 100%;
 }
 
-@media (min-width: 1000px) and (max-width: 2000px) {
+@media (min-width: 1000px) and (max-width: 3000px) {
   .scrollSuits {
     display: flex;
     overflow-x: scroll;
@@ -300,7 +336,7 @@ button i {
   background: transparent;
 }
 
-@media (min-width: 1000px) and (max-width: 2000px) {
+@media (min-width: 1000px) and (max-width: 3000px) {
   .modalWrapper {
     max-width: 50%;
   }

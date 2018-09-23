@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
 import HeaderCarousel from './components/HeaderCarousel';
 import HeadlineAndText from './components/HeadlineAndText';
 import ImageAndText from './components/ImageAndText';
@@ -27,6 +29,8 @@ class App extends Component {
     const { modalOn } = this.state;
     return (
       <div className="App">
+      <Navbar />
+      <Header />
        <HeaderCarousel carouselHeadline="Men's Fashion" />
        <div className="contentContainer">
         <HeadlineAndText headline="Fashion" text="Take a deep dive in to the fashion on of men, real suits, stylish stuits, the best suits for real men" textTwo="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus quam neque consectetur sed quis blanditiis libero nemo ea quos iusto." />
