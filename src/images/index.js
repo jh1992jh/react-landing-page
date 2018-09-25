@@ -64,7 +64,7 @@ export const imagesAndInfo = [
     {
         image: img13,
         name: 'Suit 3',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa inventore nemo perferendis. Asperiores itaque ducimus quisquam ipsa. Commodi aliquid atque, sint nulla in, esse eum facilis at voluptas similique explicabo.',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo distinctio aliquid pariatur suscipit illum blanditiis atque dolorum provident! Numquam ipsa ipsam exercitationem possimus veniam id modi cum quis nulla?',
         price: '1300€'
     },
     {
