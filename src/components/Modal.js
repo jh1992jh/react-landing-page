@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class Modal extends Component {
   render() {
-    const { modalOn, toggleModal, animation } = this.props; 
+    const { modalOn, toggleModal } = this.props; 
     return (
       modalOn === true ? (
         <div className="modalBackground" onClick={toggleModal} style={modalOn === true ? {animation: 'appearAnim 0.5s'} : {animation: 'disappearAnim 0.5s'}}>
